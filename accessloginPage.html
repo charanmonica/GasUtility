@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Login Section -->
+    <h1 id="pageTitle">Login</h1>
+    <div id="loginForm" class="form-container">
+      <label for="loginEmail">Email:</label>
+      <input type="email" id="loginEmail" placeholder="Enter your email">
+
+      <label for="loginPassword">Password:</label>
+      <input type="password" id="loginPassword" placeholder="Enter your password">
+
+      <label for="roleSelect">Select Role:</label>
+      <select id="roleSelect">
+        <option value="user">User</option>
+        <option value="admin">Admin</option>
+      </select>
+
+      <button onclick="login()">Login</button>
+
+      <p>
+        Don't have an account? <a href="#" id="toggleToSignup" onclick="toggleForm()">Signup</a>
+      </p>
+    </div>
+
+<!-- Signup Section -->
+<div id="signupForm" class="form-container hidden">
+    <!--<h2>Signup</h2>-->
+
+    <h1 id="signupTitle">Signup</h1> 
+    <label for="signupName">Name:</label>
+    <input type="text" id="signupName" placeholder="Enter your name">
+  
+    <label for="signupEmail">Email:</label>
+    <input type="email" id="signupEmail" placeholder="Enter your email">
+  
+    <label for="signupPassword">Password:</label>
+    <input type="password" id="signupPassword" placeholder="Create your password">
+  
+    <label for="signupConfirmPassword">Rewrite Password:</label>
+    <input type="password" id="signupConfirmPassword" placeholder="Rewrite your password">
+  
+    <label for="signupRole">Select Role:</label>
+    <select id="signupRole">
+      <option value="user">User</option>
+      <option value="admin">Admin</option>
+    </select>
+  
+    <div class="remember-me-container">
+      <input type="checkbox" id="rememberMe">
+      <label for="rememberMe">Remember me</label>
+    </div>
+  
+    <button onclick="signup()">Signup</button>
+  </div>  
+  </div>
+
+  <!-- Link to JavaScript -->
+  <script src="login.js"></script>
+</body>
+</html>

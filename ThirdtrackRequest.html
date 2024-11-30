@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track Request Dashboard</title>
+  <link rel="stylesheet" href="TrackRequest.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Request Dashboard</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Track Requests</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="submitRequestBtn">Submit Request</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="logoutBtn">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container my-5">
+    <div class="row">
+      <!-- Request Summary -->
+      <div class="col-md-4">
+        <div class="card text-white" style="background-color: #6c5ce7;">
+          <div class="card-body">
+            <h5 class="card-title">Total Requests</h5>
+            <p class="card-text display-6" id="totalRequests">0</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-white" style="background-color: #00cec9;">
+          <div class="card-body">
+            <h5 class="card-title">Completed Requests</h5>
+            <p class="card-text display-6" id="completedRequests">0</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-white" style="background-color: #fdcb6e;">
+          <div class="card-body">
+            <h5 class="card-title">Pending Requests</h5>
+            <p class="card-text display-6" id="pendingRequests">0</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Request Table -->
+    <div class="card">
+      <div class="card-header bg-light text-dark">
+        <h4 class="mb-0">Track Requests</h4>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-bordered table-hover">
+            <thead class="table-light">
+              <tr>
+                <th>#</th>
+                <th>Request Name</th>
+                <th>Submitted</th>
+                <th>Resolved</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="requestTableBody">
+              <!-- Dynamic rows will be appended here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="TrackRequest.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

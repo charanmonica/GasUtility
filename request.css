@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto; /* Center the container and add space from the top */
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: 300px;
+  }
+  
+  h1 {
+    margin-top: 30px; /* Push the heading down a little from the top */
+  }
+  
+  button#openModalBtn {
+    margin-top: 10px; /* Space the button below the text */
+    padding: 12px 25px; /* Adjust button padding for better size */
+    font-size: 16px;
+    width:200px;
+    margin-left:180px;
+    height:50px; /* Adjust font size for better readability */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    font-weight: bold;
+  }
+  
+  form .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  form .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  form .btn-primary {
+    margin-top: 20px; /* Add margin above the button */
+    margin-bottom: 20px; /* Add space below the button */
+  }
+  
+  /* Center modal button text */
+  #openModalBtn {
+    text-align: center;
+  }
